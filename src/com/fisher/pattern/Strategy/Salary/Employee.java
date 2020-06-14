@@ -11,6 +11,10 @@ public class Employee {
         this.ID = ID;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setPaymentClassification(PaymentClassification pc) {
         this.pc = pc;
     }
@@ -27,7 +31,4 @@ public class Employee {
         return ps.isPayDay();
     }
 
-    public String getname() {
-        return name;
-    }
 }

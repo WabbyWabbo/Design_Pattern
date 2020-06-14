@@ -35,7 +35,7 @@ public class TestDrive {
 
         while(it.hasNext()){
             Employee e = it.next();
-            System.out.print("for " + e.getname() + ", ");
+            System.out.print("for " + e.getName() + ", ");
             if (e.isPayDay()) {
                 System.out.println("the payment is: " + e.getPayment() + ".");
             }else{

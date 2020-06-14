@@ -2,6 +2,7 @@ package com.fisher.pattern.AbstractFactory.client;
 
 import com.fisher.pattern.AbstractFactory.BenzCar;
 import com.fisher.pattern.AbstractFactory.TeslaCar;
+import com.fisher.pattern.AbstractFactory.factory.AbstractFactory;
 import com.fisher.pattern.AbstractFactory.factory.SportCarFactory;
 
 /**
@@ -12,7 +13,7 @@ import com.fisher.pattern.AbstractFactory.factory.SportCarFactory;
 public class Main {
 
 	public static void main(String[] args) {
-		SportCarFactory sportCarFactory = new SportCarFactory();
+        AbstractFactory sportCarFactory = new SportCarFactory();
 		
 		TeslaCar teslaCar = sportCarFactory.getTeslaCar();
 		teslaCar.charge();
